@@ -1,4 +1,5 @@
 body.gsib {
+    clear: both;
     .navbar-menu {
         nav {
             .nav-item:nth-of-type(4) {
@@ -8,8 +9,43 @@ body.gsib {
             }
         }
     }
-    
+    .page-intro{
+        float: left;
+    }
+    .img-gsib{
+        width: 40%;
+        float: right;
+    }
+    article{
+        clear: both;
+        height: 600px;
+        padding: 3rem;
+        .img-article{
+            float: left;
+            width: 50%;
+        }
+        .text-article{
+            float: right;
+            width: 45%;
+
+            h3{
+                text-align: center;
+                color: $color-secundario;
+                font-size: 40px;
+                font-weight: 700;
+                font-family: $fuente-secundaria;
+                padding: 0 0 2rem 0;
+            }
+            p{
+                padding: 3rem 0;
+            }
+            .btn{
+                margin-left: 3rem;
+            }
+        }
+    }
     .faq-section{
+        padding: 4rem 0;
         .faq.section-title{
             background-image: url(../img/special-bg.svg);
             background-size: cover;

@@ -61,6 +61,28 @@ img {
   font-style: italic;
 }
 
+.container::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.container {
+  -ms-overlfow-style: none;
+  scrollbar-width: none;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #49AB86;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 23px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
 body.index .navbar .navbar-logo a {
   color: #6C63FF;
 }
@@ -241,8 +263,58 @@ body.cas .cas.paragraphs-page {
   margin-top: 6rem;
 }
 
+body.gsib {
+  clear: both;
+}
+
 body.gsib .navbar-menu nav .nav-item:nth-of-type(4) a {
   color: #6C63FF;
+}
+
+body.gsib .page-intro {
+  float: left;
+}
+
+body.gsib .img-gsib {
+  width: 40%;
+  float: right;
+}
+
+body.gsib article {
+  clear: both;
+  height: 600px;
+  padding: 3rem;
+}
+
+body.gsib article .img-article {
+  float: left;
+  width: 50%;
+}
+
+body.gsib article .text-article {
+  float: right;
+  width: 45%;
+}
+
+body.gsib article .text-article h3 {
+  text-align: center;
+  color: #6C63FF;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 0 2rem 0;
+}
+
+body.gsib article .text-article p {
+  padding: 3rem 0;
+}
+
+body.gsib article .text-article .btn {
+  margin-left: 3rem;
+}
+
+body.gsib .faq-section {
+  padding: 4rem 0;
 }
 
 body.gsib .faq-section .faq.section-title {

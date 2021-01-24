@@ -14,6 +14,7 @@ a{
 // Variable Declaration
 $color-oscuro: #262626;
 $color-primario: rgba(99, 182, 151, .71);
+$color-primario-2: #49AB86;
 $color-secundario: #6C63FF;
 $color-terciario: #F58EE9;
 $color-claro: #F7F7F7;
@@ -61,4 +62,23 @@ img{
     color: rgba(0, 0, 0, .6);
     font-weight: 400;
     font-style: italic;
+}
+.container::-webkit-scrollbar{
+    display:  none;
+    width: 0;
+}
+.container{
+    -ms-overlfow-style: none;
+    scrollbar-width: none;
+}
+.btn{
+    display: inline-block;
+    background-color: $color-primario-2;
+    padding: 1rem 2rem;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 23px;
+    font-family: $fuente-secundaria;
+    font-weight: bold;
+    text-align: center;
 }
