@@ -1,0 +1,11 @@
+body.blog {
+    .navbar-menu {
+        nav {
+            .nav-item:nth-of-type(2) {
+                a {
+                    color: $color-secundario;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+// Import Open Sans
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+// Import Montserrat
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+// Variable Declaration
+$color-oscuro: #262626;
+$color-primario: rgba(99, 182, 151, .71);
+$color-secundario: #6C63FF;
+$color-terciario: #F58EE9;
+$color-claro: #F7F7F7;
+$fuente-primaria: 'Open Sans', sans-serif;
+$fuente-secundaria: 'Montserrat', sans-serif;
+
+
+html {
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+    &:before, &:after{
+        box-sizing: inherit;
+    }
+}
+body{
+    background-color: $color-claro;
+    font-family: $fuente-primaria;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    .index {
+        position: relative;
+        max-height: 100vh;
+    }
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.section-title {
+    color: $color-secundario;
+    font-size: 28px;
+    text-align: center;
+    padding: 4rem 0 2.5rem 0;
+}
+.subtitle{
+    color: rgba(0, 0, 0, .6);
+    font-weight: 400;
+    font-style: italic;
+}

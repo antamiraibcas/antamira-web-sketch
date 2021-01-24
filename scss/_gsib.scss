@@ -1,0 +1,25 @@
+body.gsib {
+    .navbar-menu {
+        nav {
+            .nav-item:nth-of-type(4) {
+                a {
+                    color: $color-secundario;
+                }
+            }
+        }
+    }
+    
+    .faq-section{
+        .faq.section-title{
+            background-image: url(../img/special-bg.svg);
+            background-size: cover;
+            background-position: center;
+            padding: 2.7rem 0;
+            h2{
+                text-align: center;
+                padding: 0;
+                font-family: $fuente-secundaria;
+            }
+        }
+    }
+}

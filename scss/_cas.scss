@@ -1,0 +1,48 @@
+body.cas {
+    .navbar-menu {
+        nav {
+            .nav-item:nth-of-type(3) {
+                a {
+                    color: $color-secundario;
+                }
+            }
+        }
+    }
+    article{
+        clear: both;
+        padding: 4rem;
+        height: 400px;
+
+        .img-article{
+            width: 50%;
+
+            img{
+                border-radius: 10px;
+            }
+        }
+        .text-article{
+            width: 45%;
+        }
+
+        &:nth-of-type(1) {
+            .img-article {
+                float: left;
+            }
+            .text-article{
+                float: right;
+            }
+        }
+        &:nth-of-type(2) {
+            .img-article {
+                float: right;
+            }
+
+            .text-article {
+                float: left;
+            }
+        }
+    }
+    .cas.paragraphs-page{
+        margin-top: 6rem;
+    }
+}

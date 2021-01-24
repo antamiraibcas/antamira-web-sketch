@@ -1,0 +1,37 @@
+body.nosotros {
+    .navbar-menu {
+        nav {
+            .nav-item:nth-of-type(1) {
+                a {
+                    color: $color-secundario;
+                }
+            }
+        }
+    }
+    .img-nosotros{
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+        .bg-img{
+            position: relative;
+            min-width: 855px;
+            min-height: 560px;
+            background-color: $color-primario;
+        }
+        img{
+            position: absolute;
+            top: 6%;
+            left: 6%;
+            width: auto;
+
+            &::before, &::after{
+                content: '';
+                display: block;
+                width: 50px;
+                height: 90px;
+                background-color: $color-secundario;
+            }
+
+        }
+    }
+}
