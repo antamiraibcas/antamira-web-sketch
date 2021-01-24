@@ -221,6 +221,49 @@ body.blog .navbar-menu nav .nav-item:nth-of-type(2) a {
   color: #6C63FF;
 }
 
+body.blog .blogs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body.blog .blogs .blog {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20%;
+          flex: 1 1 20%;
+}
+
+body.blog .blogs .blog h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  padding: 2rem 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+body.blog .blogs .blog h2:hover {
+  color: #6C63FF;
+}
+
+body.blog .blogs .blog img {
+  min-height: 295px;
+}
+
+body.blog .blogs .separator {
+  -webkit-transform: translateY(250px) rotate(90deg);
+          transform: translateY(250px) rotate(90deg);
+  height: 2px;
+  opacity: .8;
+  background-color: #49AB86;
+  width: 20%;
+  display: inline-block;
+  border-radius: 1px;
+}
+
 body.cas .navbar-menu nav .nav-item:nth-of-type(3) a {
   color: #6C63FF;
 }

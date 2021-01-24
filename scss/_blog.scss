@@ -8,4 +8,34 @@ body.blog {
             }
         }
     }
+    .blogs{
+        display: flex;
+        justify-content: space-around;
+        .blog{
+            flex: 1 1 20%;
+            h2{
+                text-align: center;
+                font-family: $fuente-secundaria;
+                font-weight: 700;
+                font-size: 30px;
+                padding: 2rem 0;
+                transition: all .3s ease-in-out;
+                &:hover{
+                      color: $color-secundario;
+                }
+            }
+            img{
+                min-height: 295px;
+            }
+        }
+        .separator{
+            transform: translateY(250px) rotate(90deg);
+            height: 2px;
+            opacity: .8;
+            background-color: $color-primario-2;
+            width: 20%;
+            display: inline-block;
+            border-radius: 1px;
+        }
+    }
 }
